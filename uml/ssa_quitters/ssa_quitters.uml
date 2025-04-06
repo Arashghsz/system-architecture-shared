@@ -7,21 +7,22 @@
     <packagedElement xmi:type="uml:Actor" xmi:id="_ynuawA-UEfCA3McyNxfsCw" name="Restaurant"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_2yRIkA-UEfCA3McyNxfsCw" name="UC">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ZLL5gA-VEfCA3McyNxfsCw" name="Update Food Item"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_IKGhoA-WEfCA3McyNxfsCw" name="Order Received ACK">
-        <extend xmi:type="uml:Extend" xmi:id="_jYPt8A-WEfCA3McyNxfsCw" extendedCase="_efczAA-WEfCA3McyNxfsCw" extensionLocation="_jYQ8EA-WEfCA3McyNxfsCw"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_IKGhoA-WEfCA3McyNxfsCw" name="Order Received ACK"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_efczAA-WEfCA3McyNxfsCw" name="Order Food">
         <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jYQ8EA-WEfCA3McyNxfsCw" name="ExtensionPoint1"/>
         <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zxrvoA-YEfCA3McyNxfsCw" name="ExtensionPoint2"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_BYMTgA-XEfCA3McyNxfsCw" name="Order Ready"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_T47DwA-XEfCA3McyNxfsCw" name="Accept Delivery"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_vTKV4A-YEfCA3McyNxfsCw" name="Expected ToD">
-        <extend xmi:type="uml:Extend" xmi:id="_zxrIkA-YEfCA3McyNxfsCw" extendedCase="_efczAA-WEfCA3McyNxfsCw" extensionLocation="_zxrvoA-YEfCA3McyNxfsCw"/>
-        <include xmi:type="uml:Include" xmi:id="_UKHPgA-ZEfCA3McyNxfsCw" addition="_BYMTgA-XEfCA3McyNxfsCw"/>
-        <include xmi:type="uml:Include" xmi:id="_oBY78A-ZEfCA3McyNxfsCw" addition="_b3a5cA-ZEfCA3McyNxfsCw"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_T47DwA-XEfCA3McyNxfsCw" name="Accept Delivery">
+        <include xmi:type="uml:Include" xmi:id="_7TvXsBMNEfCN48OHO-pc0Q" addition="_z761kBMNEfCN48OHO-pc0Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_b3a5cA-ZEfCA3McyNxfsCw" name="Order pickup"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8EwsUBMKEfCYXutOX4y5sQ" name="Location Tracking of Courier"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_iJPeIBMNEfCN48OHO-pc0Q" name="See Available Deliveries">
+        <include xmi:type="uml:Include" xmi:id="_4eSNgBMNEfCN48OHO-pc0Q" addition="_z761kBMNEfCN48OHO-pc0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_z761kBMNEfCN48OHO-pc0Q" name="Find Available Deliveries"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_OhVN8BMOEfCjOMG6F1Z8ZA" name="View Courier Statistics"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_fuxiUA-VEfCA3McyNxfsCw" name="Customer"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_hDujEA-VEfCA3McyNxfsCw" name="Courier"/>
@@ -69,4 +70,8 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_fepe0A-ZEfCA3McyNxfsCw" name="courier" type="_hDujEA-VEfCA3McyNxfsCw" association="_fenpoA-ZEfCA3McyNxfsCw"/>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IBKM4BMLEfCYXutOX4y5sQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JkXFABMLEfCYXutOX4y5sQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_psi3gBMNEfCN48OHO-pc0Q"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QaKX0BMOEfCjOMG6F1Z8ZA"/>
 </uml:Model>
