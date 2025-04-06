@@ -1,0 +1,120 @@
+\section{Requirements}
+
+\subsection{Use case diagram}
+
+\large TO COMPLETE
+
+\subsection{Use cases description}
+
+\subsubsection{Updating food item menu}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-1: Updating food item menu \\
+    \textbf{Actors} & Restaurant \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The restaurant is logged into the system  
+        \item The restaurant has permission to modify its menu
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The restaurant accesses the menu update section and enters the updated information for a given food item. Then the system validates the changes (Exn 1.) made by the restaurant and the menu gets updated. \\
+    \textbf{Exceptions} & \begin{itemize} 
+        \item \bold{Exn 1.} Invalid food item details 
+         \begin{itemize} 
+            \item The restaurant gives information the system can not process.
+            \item The system displays an error message and requests for changes.
+         \end{itemize}
+    \end{itemize} \\
+    \textbf{Expected Result} & The restaurant's menu is updated and users can now order it. 
+\end{tabularx}
+
+
+\subsubsection{Order Received Acknowledgement}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-2: Order Received Acknowledgement \\
+    \textbf{Actors} & Restaurant, Customer \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item A customer has placed an order in the system.  
+        \item The restaurant has successfully received an order request.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The system notifies the restaurant about the new order request (Exn 1.). Then the restaurant reviews the order details  and acknowledges it (Exn 2.), making the system send a notification to the user which is displayed in the UI. \\
+    \textbf{Exceptions} & \begin{itemize} 
+        \item \bold{Exn 1.} Restaurant's system is down
+         \begin{itemize} 
+            \item The restaurant's system is disconnected or down so order requests can not come in.
+            \item The system retries for some time with the request.
+            \item The system notifies about the issue to customer support team and the user.
+         \end{itemize}
+         \item \bold{Exn 2.} Restaurant declines order
+         \begin{itemize} 
+            \item The restaurant declines an order due to overload.
+            \item The system tells the user about the issue.
+         \end{itemize}
+    \end{itemize} \\
+    \textbf{Expected Result} & The restaurant starts working on the new order and the user is assured about it.
+\end{tabularx}
+
+\subsubsection{Order Ready for Delivery}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-3: Order Ready for Delivery \\
+    \textbf{Actors} & Restaurant, Customer, Courier \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item A customer has placed an order in the system.  
+        \item The restaurant has successfully received and processed an order request.
+        \item A courier has accepted the delivery from the restaurant.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The restaurant marks as ready for delivery the processed order. The system then notifies the courier who accepted the delivery for pickup. The user is also notified that the order is ready. \\
+    \textbf{Exceptions} & \begin{itemize} 
+        \item \textbf{Exn 1.} Delay in processing the order
+         \begin{itemize} 
+            \item The restaurant can not prepare the order in the estimated time.
+            \item The system allows the restaurant to update the estimated time for delivery.
+            \item The system updates the estimated time and notifies the user.
+         \end{itemize}
+    \end{itemize} \\
+    \textbf{Expected Result} & The courier receives a notification about the order being ready for pickup and the customer as well.
+\end{tabularx}
+
+\subsubsection{Food Ordering}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-4: Food Ordering \\
+    \textbf{Actors} & Customer \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The customer is logged into the system.
+        \item The restaurant menu is available for viewing and ordering.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The customer begins by browsing the available food items on the menu. Once the customer selects the desired items, the system displays them with their respective prices and the total cost of the order. The customer then proceeds to the checkout, where they enter their payment details. The system processes the payment and confirms the order, showing a summary of the items ordered and an estimated delivery time. The customer receives a confirmation notification with the expected time of arrival. \\
+    \textbf{Exceptions} & \begin{itemize} 
+        \item \bold{ Exn 1. Invalid Payment:} If the payment method is declined, the system will display an error message and prompt the customer to enter a different payment method.
+        \item \bold{ Exn 2. Out of Stock Items:} If any of the selected items are unavailable, the system will notify the customer and offer them the option to modify their order, such as selecting alternative items.
+    \end{itemize} \\
+    \textbf{Expected Result} & The customer’s order is successfully placed, and the restaurant begins preparing the food. The customer receives notifications about the status of the order, including the estimated delivery time.
+\end{tabularx}
+
+\subsubsection{Location Tracking of Courier}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-5: Location Tracking of Courier \\
+    \textbf{Actors} & Restaurant, Customer, Courier \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The courier has accepted the delivery and is en route to the customer.
+        \item The customer is logged into the system and has placed an order.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & Once the courier has accepted the delivery, the system begins tracking their location in real-time. The customer is able to see the courier’s current location on the app, and the system continuously updates the customer with notifications, including the courier’s progress and the estimated time of arrival. As the courier approaches the destination, the customer receives a notification indicating that the order will be delivered shortly. The customer is kept informed of any status changes until the order is successfully delivered. \\
+    \textbf{Exceptions} & \begin{itemize} 
+        \item \bold{ Exn 1. Courier’s GPS Signal Lost:} If the courier’s GPS signal is lost, the system will notify the customer about the temporary delay in tracking and will update the customer once the signal is restored.
+        \item \bold{ Exn 2. Courier Delayed:} If the courier experiences a delay due to traffic or other unforeseen issues, the system will update the customer with a revised estimated arrival time.
+    \end{itemize} \\
+    \textbf{Expected Result} & The customer can track the courier’s real-time location throughout the delivery process and receive notifications until the order is delivered successfully.
+\end{tabularx}
