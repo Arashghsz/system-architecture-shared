@@ -139,5 +139,60 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_ij2ggBnyEfCAZ5eS3OrC7Q" name="Notify customer for delivery ready" incoming="_pYWTIBnyEfCAZ5eS3OrC7Q" outgoing="_-iHiMBnyEfCAZ5eS3OrC7Q" inPartition="_MwI8kBnyEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_vN_34BnyEfCAZ5eS3OrC7Q" name="Customer and courier are notified" incoming="_-iHiMBnyEfCAZ5eS3OrC7Q" inPartition="_MwI8kBnyEfCAZ5eS3OrC7Q"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_0VenoB-bEfCPtOOBHNRCWA" name="SeeAvailableDeliveries" node="__3eNsB-nEfCPtOOBHNRCWA _pG8U0B-qEfCTYaQG1cba2A _J6ylYB-rEfCTYaQG1cba2A _SHs8cB-rEfCTYaQG1cba2A _bcRfIB-rEfCTYaQG1cba2A _nFhaMB-rEfCTYaQG1cba2A _Cv3aUB-sEfCTYaQG1cba2A _0u16IB-sEfCTYaQG1cba2A _f1eCEB-tEfCTYaQG1cba2A _BtYXsB-uEfCTYaQG1cba2A _EI6JgB-vEfCTYaQG1cba2A" group="_JgiPIB-nEfCPtOOBHNRCWA _jof2gB-nEfCPtOOBHNRCWA _R3sHUB-nEfCPtOOBHNRCWA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WCgvsB-sEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA" target="_J6ylYB-rEfCTYaQG1cba2A" source="_pG8U0B-qEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_mEUmcB-sEfCTYaQG1cba2A" target="_SHs8cB-rEfCTYaQG1cba2A" source="_J6ylYB-rEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_pf4uYB-sEfCTYaQG1cba2A" inPartition="_R3sHUB-nEfCPtOOBHNRCWA" target="_bcRfIB-rEfCTYaQG1cba2A" source="_SHs8cB-rEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_szHZsB-sEfCTYaQG1cba2A" name="YES" target="_nFhaMB-rEfCTYaQG1cba2A" source="_bcRfIB-rEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BbqyEB-tEfCTYaQG1cba2A" name="NO" target="_0u16IB-sEfCTYaQG1cba2A" source="_bcRfIB-rEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KILPMB-tEfCTYaQG1cba2A" inPartition="_jof2gB-nEfCPtOOBHNRCWA" target="_Cv3aUB-sEfCTYaQG1cba2A" source="_nFhaMB-rEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_pe4MUB-tEfCTYaQG1cba2A" name="YES" inPartition="_jof2gB-nEfCPtOOBHNRCWA" target="_f1eCEB-tEfCTYaQG1cba2A" source="_Cv3aUB-sEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_i6YvIB-uEfCTYaQG1cba2A" name="NO" target="_BtYXsB-uEfCTYaQG1cba2A" source="_Cv3aUB-sEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_irqhMB-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA" target="_EI6JgB-vEfCTYaQG1cba2A" source="_0u16IB-sEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_tFXf8B-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA" target="_EI6JgB-vEfCTYaQG1cba2A" source="_f1eCEB-tEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_z_mHIB-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA" target="_EI6JgB-vEfCTYaQG1cba2A" source="_BtYXsB-uEfCTYaQG1cba2A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_JgiPIB-nEfCPtOOBHNRCWA" name="Courier" node="__3eNsB-nEfCPtOOBHNRCWA _pG8U0B-qEfCTYaQG1cba2A _J6ylYB-rEfCTYaQG1cba2A _0u16IB-sEfCTYaQG1cba2A _BtYXsB-uEfCTYaQG1cba2A _f1eCEB-tEfCTYaQG1cba2A _EI6JgB-vEfCTYaQG1cba2A" edge="_WCgvsB-sEfCTYaQG1cba2A _irqhMB-vEfCTYaQG1cba2A _tFXf8B-vEfCTYaQG1cba2A _z_mHIB-vEfCTYaQG1cba2A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_R3sHUB-nEfCPtOOBHNRCWA" name="Location" node="_SHs8cB-rEfCTYaQG1cba2A _bcRfIB-rEfCTYaQG1cba2A" edge="_pf4uYB-sEfCTYaQG1cba2A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_jof2gB-nEfCPtOOBHNRCWA" name="Delivery" node="_nFhaMB-rEfCTYaQG1cba2A _Cv3aUB-sEfCTYaQG1cba2A" edge="_KILPMB-tEfCTYaQG1cba2A _pe4MUB-tEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:InitialNode" xmi:id="__3eNsB-nEfCPtOOBHNRCWA" name="InitialNode4" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_pG8U0B-qEfCTYaQG1cba2A" outgoing="_WCgvsB-sEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_J6ylYB-rEfCTYaQG1cba2A" name="Open delivery page" incoming="_WCgvsB-sEfCTYaQG1cba2A" outgoing="_mEUmcB-sEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_SHs8cB-rEfCTYaQG1cba2A" name="Location permissions verified" incoming="_mEUmcB-sEfCTYaQG1cba2A" outgoing="_pf4uYB-sEfCTYaQG1cba2A" inPartition="_R3sHUB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_bcRfIB-rEfCTYaQG1cba2A" name="Is location available?" incoming="_pf4uYB-sEfCTYaQG1cba2A" outgoing="_szHZsB-sEfCTYaQG1cba2A _BbqyEB-tEfCTYaQG1cba2A" inPartition="_R3sHUB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_nFhaMB-rEfCTYaQG1cba2A" name="System fetches list of available deliveries" incoming="_szHZsB-sEfCTYaQG1cba2A" outgoing="_KILPMB-tEfCTYaQG1cba2A" inPartition="_jof2gB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_Cv3aUB-sEfCTYaQG1cba2A" name="Are there available deliveries?" incoming="_KILPMB-tEfCTYaQG1cba2A" outgoing="_pe4MUB-tEfCTYaQG1cba2A _i6YvIB-uEfCTYaQG1cba2A" inPartition="_jof2gB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0u16IB-sEfCTYaQG1cba2A" name="Show error message, request permissions" incoming="_BbqyEB-tEfCTYaQG1cba2A" outgoing="_irqhMB-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_f1eCEB-tEfCTYaQG1cba2A" name="Show deliveries available" incoming="_pe4MUB-tEfCTYaQG1cba2A" outgoing="_tFXf8B-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BtYXsB-uEfCTYaQG1cba2A" name="Display: &quot;No deliveries available&quot;" incoming="_i6YvIB-uEfCTYaQG1cba2A" outgoing="_z_mHIB-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_EI6JgB-vEfCTYaQG1cba2A" incoming="_irqhMB-vEfCTYaQG1cba2A _tFXf8B-vEfCTYaQG1cba2A _z_mHIB-vEfCTYaQG1cba2A" inPartition="_JgiPIB-nEfCPtOOBHNRCWA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_9dchoB-vEfCTYaQG1cba2A" name="AcceptDelivery" node="_A7jx0B-xEfCTYaQG1cba2A _CoKdkB-xEfCTYaQG1cba2A _HsbBoB-xEfCTYaQG1cba2A _QXGSwB-xEfCTYaQG1cba2A _V22gAB-xEfCTYaQG1cba2A _cUZyQB-xEfCTYaQG1cba2A _lQKMUB-xEfCTYaQG1cba2A _sHnMUB-xEfCTYaQG1cba2A _rsW-QB-yEfCTYaQG1cba2A _vIEQIB-yEfCTYaQG1cba2A _2M4WsB-yEfCTYaQG1cba2A _EP1UEB-zEfCTYaQG1cba2A" group="_18A7EB-wEfCTYaQG1cba2A _4QW8QB-wEfCTYaQG1cba2A">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xN4ikB-xEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A" target="_CoKdkB-xEfCTYaQG1cba2A" source="_A7jx0B-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_333HQB-xEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A" target="_HsbBoB-xEfCTYaQG1cba2A" source="_CoKdkB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_5GqcsB-xEfCTYaQG1cba2A" target="_QXGSwB-xEfCTYaQG1cba2A" source="_HsbBoB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_8oHKMB-xEfCTYaQG1cba2A" name="YES" inPartition="_4QW8QB-wEfCTYaQG1cba2A" target="_V22gAB-xEfCTYaQG1cba2A" source="_QXGSwB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_G0uIIB-yEfCTYaQG1cba2A" name="NO" target="_sHnMUB-xEfCTYaQG1cba2A" source="_QXGSwB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_LjUlQB-yEfCTYaQG1cba2A" target="_cUZyQB-xEfCTYaQG1cba2A" source="_V22gAB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Q_ONQB-yEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A" target="_lQKMUB-xEfCTYaQG1cba2A" source="_cUZyQB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KC10gB-zEfCTYaQG1cba2A" target="_rsW-QB-yEfCTYaQG1cba2A" source="_lQKMUB-xEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_M61VUB-zEfCTYaQG1cba2A" inPartition="_4QW8QB-wEfCTYaQG1cba2A" target="_vIEQIB-yEfCTYaQG1cba2A" source="_rsW-QB-yEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QreVYB-zEfCTYaQG1cba2A" target="_2M4WsB-yEfCTYaQG1cba2A" source="_vIEQIB-yEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_TqwJ8B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A" target="_EP1UEB-zEfCTYaQG1cba2A" source="_2M4WsB-yEfCTYaQG1cba2A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WYOc0B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A" target="_EP1UEB-zEfCTYaQG1cba2A" source="_sHnMUB-xEfCTYaQG1cba2A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_18A7EB-wEfCTYaQG1cba2A" name="Courier" node="_A7jx0B-xEfCTYaQG1cba2A _CoKdkB-xEfCTYaQG1cba2A _HsbBoB-xEfCTYaQG1cba2A _cUZyQB-xEfCTYaQG1cba2A _lQKMUB-xEfCTYaQG1cba2A _sHnMUB-xEfCTYaQG1cba2A _2M4WsB-yEfCTYaQG1cba2A _EP1UEB-zEfCTYaQG1cba2A" edge="_xN4ikB-xEfCTYaQG1cba2A _333HQB-xEfCTYaQG1cba2A _Q_ONQB-yEfCTYaQG1cba2A _TqwJ8B-zEfCTYaQG1cba2A _WYOc0B-zEfCTYaQG1cba2A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_4QW8QB-wEfCTYaQG1cba2A" name="Delivery" node="_QXGSwB-xEfCTYaQG1cba2A _V22gAB-xEfCTYaQG1cba2A _rsW-QB-yEfCTYaQG1cba2A _vIEQIB-yEfCTYaQG1cba2A" edge="_8oHKMB-xEfCTYaQG1cba2A _M61VUB-zEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_A7jx0B-xEfCTYaQG1cba2A" outgoing="_xN4ikB-xEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_CoKdkB-xEfCTYaQG1cba2A" name="View Available Deliveries" incoming="_xN4ikB-xEfCTYaQG1cba2A" outgoing="_333HQB-xEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_HsbBoB-xEfCTYaQG1cba2A" name="Select Delivery" incoming="_333HQB-xEfCTYaQG1cba2A" outgoing="_5GqcsB-xEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_QXGSwB-xEfCTYaQG1cba2A" name="Is delivery still available?" incoming="_5GqcsB-xEfCTYaQG1cba2A" outgoing="_8oHKMB-xEfCTYaQG1cba2A _G0uIIB-yEfCTYaQG1cba2A" inPartition="_4QW8QB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_V22gAB-xEfCTYaQG1cba2A" name="Assign Delivery to Courier" incoming="_8oHKMB-xEfCTYaQG1cba2A" outgoing="_LjUlQB-yEfCTYaQG1cba2A" inPartition="_4QW8QB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_cUZyQB-xEfCTYaQG1cba2A" name="Show Confirmation Popup" incoming="_LjUlQB-yEfCTYaQG1cba2A" outgoing="_Q_ONQB-yEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_lQKMUB-xEfCTYaQG1cba2A" name="Confirm Acceptance" incoming="_Q_ONQB-yEfCTYaQG1cba2A" outgoing="_KC10gB-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_sHnMUB-xEfCTYaQG1cba2A" name="Show Error (if taken)" incoming="_G0uIIB-yEfCTYaQG1cba2A" outgoing="_WYOc0B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rsW-QB-yEfCTYaQG1cba2A" name="Update Delivery Status" incoming="_KC10gB-zEfCTYaQG1cba2A" outgoing="_M61VUB-zEfCTYaQG1cba2A" inPartition="_4QW8QB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_vIEQIB-yEfCTYaQG1cba2A" name="Notify Restaurant" incoming="_M61VUB-zEfCTYaQG1cba2A" outgoing="_QreVYB-zEfCTYaQG1cba2A" inPartition="_4QW8QB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_2M4WsB-yEfCTYaQG1cba2A" name="Confirmation Received" incoming="_QreVYB-zEfCTYaQG1cba2A" outgoing="_TqwJ8B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_EP1UEB-zEfCTYaQG1cba2A" incoming="_TqwJ8B-zEfCTYaQG1cba2A _WYOc0B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
