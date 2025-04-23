@@ -194,5 +194,42 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_2M4WsB-yEfCTYaQG1cba2A" name="Confirmation Received" incoming="_QreVYB-zEfCTYaQG1cba2A" outgoing="_TqwJ8B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_EP1UEB-zEfCTYaQG1cba2A" incoming="_TqwJ8B-zEfCTYaQG1cba2A _WYOc0B-zEfCTYaQG1cba2A" inPartition="_18A7EB-wEfCTYaQG1cba2A"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_vNHyACAwEfC2uOix2kZrmw" name="UC-8" node="__JUI8CAwEfC2uOix2kZrmw _C1KIkCAxEfC2uOix2kZrmw _EzSCICAxEfC2uOix2kZrmw _HQfEYCAxEfC2uOix2kZrmw _L-RCICAxEfC2uOix2kZrmw _WD9fwCAxEfC2uOix2kZrmw" group="_4gD9ACAwEfC2uOix2kZrmw _5vp8oCAwEfC2uOix2kZrmw _8e04oCAwEfC2uOix2kZrmw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Qs3fQCAxEfC2uOix2kZrmw" inPartition="_8e04oCAwEfC2uOix2kZrmw" target="_L-RCICAxEfC2uOix2kZrmw" source="_HQfEYCAxEfC2uOix2kZrmw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XQvb8CAxEfC2uOix2kZrmw" inPartition="_8e04oCAwEfC2uOix2kZrmw" target="_WD9fwCAxEfC2uOix2kZrmw" source="_HQfEYCAxEfC2uOix2kZrmw"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_hyvbECAxEfC2uOix2kZrmw" target="_hy0TkCAxEfC2uOix2kZrmw" source="_hyzFcCAxEfC2uOix2kZrmw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_hy6aMCAxEfC2uOix2kZrmw" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_hy6aMSAxEfC2uOix2kZrmw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_mJc8oCAxEfC2uOix2kZrmw" inPartition="_4gD9ACAwEfC2uOix2kZrmw" target="_C1KIkCAxEfC2uOix2kZrmw" source="__JUI8CAwEfC2uOix2kZrmw"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_nh1E0CAxEfC2uOix2kZrmw" target="_nh26ASAxEfC2uOix2kZrmw" source="_nh2S8CAxEfC2uOix2kZrmw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_nh9AoCAxEfC2uOix2kZrmw" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_nh9AoSAxEfC2uOix2kZrmw" value="1"/>
+      </edge>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_4gD9ACAwEfC2uOix2kZrmw" name="Courier" node="__JUI8CAwEfC2uOix2kZrmw _C1KIkCAxEfC2uOix2kZrmw" edge="_mJc8oCAxEfC2uOix2kZrmw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_5vp8oCAwEfC2uOix2kZrmw" name="Delivery" node="_EzSCICAxEfC2uOix2kZrmw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_8e04oCAwEfC2uOix2kZrmw" name="Order" node="_HQfEYCAxEfC2uOix2kZrmw _L-RCICAxEfC2uOix2kZrmw _WD9fwCAxEfC2uOix2kZrmw" edge="_Qs3fQCAxEfC2uOix2kZrmw _XQvb8CAxEfC2uOix2kZrmw"/>
+      <node xmi:type="uml:InitialNode" xmi:id="__JUI8CAwEfC2uOix2kZrmw" name="" outgoing="_mJc8oCAxEfC2uOix2kZrmw" inPartition="_4gD9ACAwEfC2uOix2kZrmw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_C1KIkCAxEfC2uOix2kZrmw" name="Picks Up Order" incoming="_mJc8oCAxEfC2uOix2kZrmw" inPartition="_4gD9ACAwEfC2uOix2kZrmw">
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_hyzFcCAxEfC2uOix2kZrmw" name="status" outgoing="_hyvbECAxEfC2uOix2kZrmw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_hyzsgCAxEfC2uOix2kZrmw" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_EzSCICAxEfC2uOix2kZrmw" name="Change Status" inPartition="_5vp8oCAwEfC2uOix2kZrmw">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_hy0TkCAxEfC2uOix2kZrmw" incoming="_hyvbECAxEfC2uOix2kZrmw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_hy0TkSAxEfC2uOix2kZrmw" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_nh2S8CAxEfC2uOix2kZrmw" outgoing="_nh1E0CAxEfC2uOix2kZrmw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_nh26ACAxEfC2uOix2kZrmw" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_HQfEYCAxEfC2uOix2kZrmw" name="Inform Customer" outgoing="_Qs3fQCAxEfC2uOix2kZrmw _XQvb8CAxEfC2uOix2kZrmw" inPartition="_8e04oCAwEfC2uOix2kZrmw">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_nh26ASAxEfC2uOix2kZrmw" name="deliveryy" incoming="_nh1E0CAxEfC2uOix2kZrmw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_nh26AiAxEfC2uOix2kZrmw" value="1"/>
+        </inputValue>
+      </node>
+      <node xmi:type="uml:SendSignalAction" xmi:id="_L-RCICAxEfC2uOix2kZrmw" name="Create Notification" incoming="_Qs3fQCAxEfC2uOix2kZrmw" inPartition="_8e04oCAwEfC2uOix2kZrmw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_WD9fwCAxEfC2uOix2kZrmw" incoming="_XQvb8CAxEfC2uOix2kZrmw" inPartition="_8e04oCAwEfC2uOix2kZrmw"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
