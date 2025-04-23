@@ -1,4 +1,5 @@
 \section{Requirements}
+This section outlines the functional requirements of the F-LOW Food Delivery Service system. It includes the main use case diagram showing the fundamental interactions among users and the system, followed by detailed descriptions of each use case scenario. These requirements form the basis for understanding system functionality and are essential inputs for the subsequent architectural design using the 4+1 view model.
 
 \subsection{Use case diagram}
 
@@ -205,7 +206,7 @@
 
 \noindent
 \begin{tabularx}{\textwidth}{l X}
-    \textbf{Identifier and Name} & UC-8: View Courier Statistics \\
+    \textbf{Identifier and Name} & UC-9: View Courier Statistics \\
     \textbf{Actors} & Courier \\
     \textbf{Preconditions} & 
     \begin{itemize} 
@@ -220,6 +221,57 @@
         \end{itemize}
     \end{itemize} \\
     \textbf{Expected Result} & The delivery is now picked up by the courier. The app transitions to the next step in the delivery workflow (i.e., deliver).
+\end{tabularx}
+
+\subsubsection{Order Payment}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-10: Order Payment \\
+    \textbf{Actors} & Customer \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The customer has chosen some food items from the menu of a restaurant.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The customer chooses the payment method and pays for its order with the third-party payment provider (Exn. 1). \\
+    \textbf{Exceptions} & 
+    \begin{itemize} 
+        \item \textbf{Exn 1.} Payment fails
+        \begin{itemize}
+            \item The interface shows an error with the message provided by the payment provider.
+        \end{itemize}
+    \end{itemize} \\
+    \textbf{Expected Result} & The interface shows a message of success and the customer has now acces to the information related to the order.
+\end{tabularx}
+
+\subsubsection{Order Delayed}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-11: Order Delayed \\
+    \textbf{Actors} & Courier \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The courier has started a delivery.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The courier accesses the interface where they update the time of delivery. \\
+    \textbf{Exceptions} & \\
+    \textbf{Expected Result} & The system updates the information about delivery time to the customer.
+\end{tabularx}
+
+\subsubsection{Delivery completed}
+
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \textbf{Identifier and Name} & UC-12: Delivery completed \\
+    \textbf{Actors} & Courier \\
+    \textbf{Preconditions} & 
+    \begin{itemize} 
+        \item The courier has started a delivery.
+    \end{itemize} \\
+    \textbf{Main Success Scenario} & The courier accesses the interface and sets the delivery as completed. \\
+    \textbf{Exceptions} & \\
+    \textbf{Expected Result} & The customer can see its delivery in the completed state as well as the courier.
 \end{tabularx}
 
 
