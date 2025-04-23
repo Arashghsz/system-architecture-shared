@@ -3,7 +3,7 @@
   <di:SashWindowsMngr>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
       <windows>
-        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.4">
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.3">
           <children>
             <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
           </children>
@@ -17,7 +17,7 @@
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_4FSXwBnpEfCAZ5eS3OrC7Q"/>
           </children>
           <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_wP6vQBnvEfCAZ5eS3OrC7Q"/>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_3btHkCAxEfC2uOix2kZrmw"/>
           </children>
         </children>
       </windows>

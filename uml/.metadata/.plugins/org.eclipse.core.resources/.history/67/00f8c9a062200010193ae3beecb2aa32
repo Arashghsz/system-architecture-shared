@@ -105,34 +105,26 @@
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_vK8_MBnXEfCAZ5eS3OrC7Q" name="Food Item gets updated" incoming="_zqgTsBnXEfCAZ5eS3OrC7Q" inPartition="_gym2EBnWEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="__S_ZwBnXEfCAZ5eS3OrC7Q" name="Food Item is not updated" incoming="_FW2ZoBnYEfCAZ5eS3OrC7Q" inPartition="_pltAMBnSEfCAZ5eS3OrC7Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_g6aMkBnpEfCAZ5eS3OrC7Q" name="UC-2" node="_0k5kwBnqEfCAZ5eS3OrC7Q _vLGZEBnrEfCAZ5eS3OrC7Q _7VD0gBnrEfCAZ5eS3OrC7Q _5LEMsBnsEfCAZ5eS3OrC7Q _VREOEBntEfCAZ5eS3OrC7Q __hOoEBntEfCAZ5eS3OrC7Q _HfFPcBnuEfCAZ5eS3OrC7Q _dDWpMBnuEfCAZ5eS3OrC7Q _i6FzEBnuEfCAZ5eS3OrC7Q _h361MCBhEfCuR4vFIPMFHg _05VQoCBhEfCuR4vFIPMFHg _MYV4wCBiEfCuR4vFIPMFHg" group="_oPAmIBnqEfCAZ5eS3OrC7Q _s1MHEBnqEfCAZ5eS3OrC7Q _TH-O8CBhEfCuR4vFIPMFHg">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_g6aMkBnpEfCAZ5eS3OrC7Q" name="UC-2" node="_0k5kwBnqEfCAZ5eS3OrC7Q _vLGZEBnrEfCAZ5eS3OrC7Q _7VD0gBnrEfCAZ5eS3OrC7Q _5LEMsBnsEfCAZ5eS3OrC7Q _VREOEBntEfCAZ5eS3OrC7Q __hOoEBntEfCAZ5eS3OrC7Q _HfFPcBnuEfCAZ5eS3OrC7Q _dDWpMBnuEfCAZ5eS3OrC7Q _i6FzEBnuEfCAZ5eS3OrC7Q" group="_oPAmIBnqEfCAZ5eS3OrC7Q _s1MHEBnqEfCAZ5eS3OrC7Q">
       <edge xmi:type="uml:ControlFlow" xmi:id="_x4nvQBnrEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q" target="_vLGZEBnrEfCAZ5eS3OrC7Q" source="_0k5kwBnqEfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_EAU7gBnsEfCAZ5eS3OrC7Q" target="_7VD0gBnrEfCAZ5eS3OrC7Q" source="_vLGZEBnrEfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="__ViK4BnsEfCAZ5eS3OrC7Q" name="NO" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q" target="_5LEMsBnsEfCAZ5eS3OrC7Q" source="_7VD0gBnrEfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_bAIpsBntEfCAZ5eS3OrC7Q" name="YES" target="_VREOEBntEfCAZ5eS3OrC7Q" source="_7VD0gBnrEfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_FIwRQBnuEfCAZ5eS3OrC7Q" name="YES" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q" target="__hOoEBntEfCAZ5eS3OrC7Q" source="_VREOEBntEfCAZ5eS3OrC7Q"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NlDvMBnuEfCAZ5eS3OrC7Q" name="NO" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q" target="_HfFPcBnuEfCAZ5eS3OrC7Q" source="_VREOEBntEfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_hK3RIBnuEfCAZ5eS3OrC7Q" target="_dDWpMBnuEfCAZ5eS3OrC7Q" source="_HfFPcBnuEfCAZ5eS3OrC7Q"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_zrc9sCBgEfCuR4vFIPMFHg" name="NO" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q" target="_h361MCBhEfCuR4vFIPMFHg" source="_VREOEBntEfCAZ5eS3OrC7Q"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_wq9ywCBhEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q" target="_HfFPcBnuEfCAZ5eS3OrC7Q" source="_h361MCBhEfCuR4vFIPMFHg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_CJW8QCBiEfCuR4vFIPMFHg" target="_05VQoCBhEfCuR4vFIPMFHg" source="_h361MCBhEfCuR4vFIPMFHg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_P3sUgCBiEfCuR4vFIPMFHg" target="_MYV4wCBiEfCuR4vFIPMFHg" source="_dDWpMBnuEfCAZ5eS3OrC7Q"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_RZuvACBiEfCuR4vFIPMFHg" target="_MYV4wCBiEfCuR4vFIPMFHg" source="_05VQoCBhEfCuR4vFIPMFHg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_YoPkICBiEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q" target="_i6FzEBnuEfCAZ5eS3OrC7Q" source="_MYV4wCBiEfCuR4vFIPMFHg"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_oPAmIBnqEfCAZ5eS3OrC7Q" name="Notification" node="_0k5kwBnqEfCAZ5eS3OrC7Q _vLGZEBnrEfCAZ5eS3OrC7Q _7VD0gBnrEfCAZ5eS3OrC7Q _5LEMsBnsEfCAZ5eS3OrC7Q _dDWpMBnuEfCAZ5eS3OrC7Q" edge="_x4nvQBnrEfCAZ5eS3OrC7Q __ViK4BnsEfCAZ5eS3OrC7Q"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_s1MHEBnqEfCAZ5eS3OrC7Q" name="Restaurant" node="_VREOEBntEfCAZ5eS3OrC7Q __hOoEBntEfCAZ5eS3OrC7Q _HfFPcBnuEfCAZ5eS3OrC7Q _h361MCBhEfCuR4vFIPMFHg _i6FzEBnuEfCAZ5eS3OrC7Q _MYV4wCBiEfCuR4vFIPMFHg" edge="_FIwRQBnuEfCAZ5eS3OrC7Q _zrc9sCBgEfCuR4vFIPMFHg _wq9ywCBhEfCuR4vFIPMFHg _YoPkICBiEfCuR4vFIPMFHg"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_TH-O8CBhEfCuR4vFIPMFHg" name="Order" node="_05VQoCBhEfCuR4vFIPMFHg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nMVrYBnuEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q" target="_i6FzEBnuEfCAZ5eS3OrC7Q" source="_dDWpMBnuEfCAZ5eS3OrC7Q"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_oPAmIBnqEfCAZ5eS3OrC7Q" name="Notification" node="_0k5kwBnqEfCAZ5eS3OrC7Q _vLGZEBnrEfCAZ5eS3OrC7Q _7VD0gBnrEfCAZ5eS3OrC7Q _5LEMsBnsEfCAZ5eS3OrC7Q _dDWpMBnuEfCAZ5eS3OrC7Q _i6FzEBnuEfCAZ5eS3OrC7Q" edge="_x4nvQBnrEfCAZ5eS3OrC7Q __ViK4BnsEfCAZ5eS3OrC7Q _nMVrYBnuEfCAZ5eS3OrC7Q"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_s1MHEBnqEfCAZ5eS3OrC7Q" name="Restaurant" node="_VREOEBntEfCAZ5eS3OrC7Q __hOoEBntEfCAZ5eS3OrC7Q _HfFPcBnuEfCAZ5eS3OrC7Q" edge="_FIwRQBnuEfCAZ5eS3OrC7Q _NlDvMBnuEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:InitialNode" xmi:id="_0k5kwBnqEfCAZ5eS3OrC7Q" name="" outgoing="_x4nvQBnrEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_vLGZEBnrEfCAZ5eS3OrC7Q" name="Customer placed an order" incoming="_x4nvQBnrEfCAZ5eS3OrC7Q" outgoing="_EAU7gBnsEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_7VD0gBnrEfCAZ5eS3OrC7Q" name="Is restaurant's system reachable?" incoming="_EAU7gBnsEfCAZ5eS3OrC7Q" outgoing="__ViK4BnsEfCAZ5eS3OrC7Q _bAIpsBntEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_5LEMsBnsEfCAZ5eS3OrC7Q" name="Retry notification" incoming="__ViK4BnsEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_VREOEBntEfCAZ5eS3OrC7Q" name="Is Restaurant Overlaoded?" incoming="_bAIpsBntEfCAZ5eS3OrC7Q" outgoing="_FIwRQBnuEfCAZ5eS3OrC7Q _zrc9sCBgEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_VREOEBntEfCAZ5eS3OrC7Q" name="Is Restaurant Overlaoded?" incoming="_bAIpsBntEfCAZ5eS3OrC7Q" outgoing="_FIwRQBnuEfCAZ5eS3OrC7Q _NlDvMBnuEfCAZ5eS3OrC7Q" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="__hOoEBntEfCAZ5eS3OrC7Q" name="Order is declined" incoming="_FIwRQBnuEfCAZ5eS3OrC7Q" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_HfFPcBnuEfCAZ5eS3OrC7Q" name="Acknowledge Order" incoming="_wq9ywCBhEfCuR4vFIPMFHg" outgoing="_hK3RIBnuEfCAZ5eS3OrC7Q" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_dDWpMBnuEfCAZ5eS3OrC7Q" name="Notify restaurant acknowledgement" incoming="_hK3RIBnuEfCAZ5eS3OrC7Q" outgoing="_P3sUgCBiEfCuR4vFIPMFHg" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_i6FzEBnuEfCAZ5eS3OrC7Q" name="User is notified" incoming="_YoPkICBiEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:ForkNode" xmi:id="_h361MCBhEfCuR4vFIPMFHg" name="" incoming="_zrc9sCBgEfCuR4vFIPMFHg" outgoing="_wq9ywCBhEfCuR4vFIPMFHg _CJW8QCBiEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_05VQoCBhEfCuR4vFIPMFHg" name="Set estimate of finishing" incoming="_CJW8QCBiEfCuR4vFIPMFHg" outgoing="_RZuvACBiEfCuR4vFIPMFHg" inPartition="_TH-O8CBhEfCuR4vFIPMFHg"/>
-      <node xmi:type="uml:ForkNode" xmi:id="_MYV4wCBiEfCuR4vFIPMFHg" incoming="_P3sUgCBiEfCuR4vFIPMFHg _RZuvACBiEfCuR4vFIPMFHg" outgoing="_YoPkICBiEfCuR4vFIPMFHg" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_HfFPcBnuEfCAZ5eS3OrC7Q" name="Acknowledge Order" incoming="_NlDvMBnuEfCAZ5eS3OrC7Q" outgoing="_hK3RIBnuEfCAZ5eS3OrC7Q" inPartition="_s1MHEBnqEfCAZ5eS3OrC7Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_dDWpMBnuEfCAZ5eS3OrC7Q" name="Notify restaurant acknowledgement" incoming="_hK3RIBnuEfCAZ5eS3OrC7Q" outgoing="_nMVrYBnuEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_i6FzEBnuEfCAZ5eS3OrC7Q" name="User is notified" incoming="_nMVrYBnuEfCAZ5eS3OrC7Q" inPartition="_oPAmIBnqEfCAZ5eS3OrC7Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Activity" xmi:id="_x8W4YBnuEfCAZ5eS3OrC7Q" name="UC-3" node="_LqbuMBnxEfCAZ5eS3OrC7Q _OAAecBnxEfCAZ5eS3OrC7Q _Tlx-sBnyEfCAZ5eS3OrC7Q _ij2ggBnyEfCAZ5eS3OrC7Q _vN_34BnyEfCAZ5eS3OrC7Q" group="_9zHZEBnwEfCAZ5eS3OrC7Q _MwI8kBnyEfCAZ5eS3OrC7Q">
       <edge xmi:type="uml:ControlFlow" xmi:id="_j4jfEBnxEfCAZ5eS3OrC7Q" inPartition="_9zHZEBnwEfCAZ5eS3OrC7Q" target="_OAAecBnxEfCAZ5eS3OrC7Q" source="_LqbuMBnxEfCAZ5eS3OrC7Q"/>
