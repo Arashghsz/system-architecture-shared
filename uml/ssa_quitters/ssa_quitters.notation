@@ -390,7 +390,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Qar8QRMOEfCjOMG6F1Z8ZA" id="(0.9032258064516129,0.2)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_UOwisBnQEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="UpdateFoodItemMenu" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_UOwisBnQEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="UC-1" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_UOwisRnQEfCAZ5eS3OrC7Q" type="Activity_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_UOwishnQEfCAZ5eS3OrC7Q" type="Activity_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_UOwisxnQEfCAZ5eS3OrC7Q" type="Activity_KeywordLabel"/>
@@ -841,7 +841,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FXw_oRnYEfCAZ5eS3OrC7Q" id="(0.36363636363636365,0.06818181818181818)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_4FSXwBnpEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="OrderReceivedAck" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_4FSXwBnpEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="UC-2" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_4FSXwRnpEfCAZ5eS3OrC7Q" type="Activity_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_4FSXwhnpEfCAZ5eS3OrC7Q" type="Activity_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_4FSXwxnpEfCAZ5eS3OrC7Q" type="Activity_KeywordLabel"/>
@@ -1160,7 +1160,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nNBA0RnuEfCAZ5eS3OrC7Q" id="(0.5135135135135135,0.13636363636363635)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_wP6vQBnvEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="OrderReadyForDelivery" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_wP6vQBnvEfCAZ5eS3OrC7Q" type="PapyrusUMLActivityDiagram" name="UC-3" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_wP6vQRnvEfCAZ5eS3OrC7Q" type="Activity_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_wP6vQhnvEfCAZ5eS3OrC7Q" type="Activity_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_wP6vQxnvEfCAZ5eS3OrC7Q" type="Activity_KeywordLabel"/>
@@ -1334,7 +1334,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-ijnERnyEfCAZ5eS3OrC7Q" id="(0.39285714285714285,0.1951219512195122)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="__m1AEB-bEfCPtOOBHNRCWA" type="PapyrusUMLActivityDiagram" name="SeeAvailableDeliveries" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="__m1AEB-bEfCPtOOBHNRCWA" type="PapyrusUMLActivityDiagram" name="UC-6" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="__m1AER-bEfCPtOOBHNRCWA" type="Activity_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="__m1AEh-bEfCPtOOBHNRCWA" type="Activity_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="__m1AEx-bEfCPtOOBHNRCWA" type="Activity_KeywordLabel"/>
@@ -1734,7 +1734,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0Ap3ER-vEfCTYaQG1cba2A" id="(0.04878048780487805,0.4878048780487805)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_Cf0PUB-wEfCTYaQG1cba2A" type="PapyrusUMLActivityDiagram" name="AcceptDelivery" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_Cf0PUB-wEfCTYaQG1cba2A" type="PapyrusUMLActivityDiagram" name="UC-7" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_Cf0PUR-wEfCTYaQG1cba2A" type="Activity_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_Cf0PUh-wEfCTYaQG1cba2A" type="Activity_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_Cf0PUx-wEfCTYaQG1cba2A" type="Activity_KeywordLabel"/>
