@@ -74,7 +74,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_psi3gBMNEfCN48OHO-pc0Q"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_QaKX0BMOEfCjOMG6F1Z8ZA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_8_098BnPEfCAZ5eS3OrC7Q" name="Uc-9">
+  <packagedElement xmi:type="uml:Package" xmi:id="_8_098BnPEfCAZ5eS3OrC7Q" name="Activity Diagrams">
     <packagedElement xmi:type="uml:Activity" xmi:id="_AcocABnQEfCAZ5eS3OrC7Q" name="Update Food Item" node="_DVzZ0BnWEfCAZ5eS3OrC7Q _D41q4BnVEfCAZ5eS3OrC7Q _frg9EBnUEfCAZ5eS3OrC7Q _YvUnABnUEfCAZ5eS3OrC7Q _Ema_EBnUEfCAZ5eS3OrC7Q _Xj81gBnTEfCAZ5eS3OrC7Q _7S-vsBnREfCAZ5eS3OrC7Q _RjmHgBnREfCAZ5eS3OrC7Q _of7uIBnWEfCAZ5eS3OrC7Q _EsLhcBnXEfCAZ5eS3OrC7Q _dm-yIBnXEfCAZ5eS3OrC7Q _vK8_MBnXEfCAZ5eS3OrC7Q __S_ZwBnXEfCAZ5eS3OrC7Q" group="_pltAMBnSEfCAZ5eS3OrC7Q _fDWGoBnQEfCAZ5eS3OrC7Q _gym2EBnWEfCAZ5eS3OrC7Q">
       <edge xmi:type="uml:ControlFlow" xmi:id="_WCDaYBnSEfCAZ5eS3OrC7Q" inPartition="_fDWGoBnQEfCAZ5eS3OrC7Q" target="_7S-vsBnREfCAZ5eS3OrC7Q" source="_RjmHgBnREfCAZ5eS3OrC7Q"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_bGbdwBnTEfCAZ5eS3OrC7Q" target="_Xj81gBnTEfCAZ5eS3OrC7Q" source="_7S-vsBnREfCAZ5eS3OrC7Q"/>
