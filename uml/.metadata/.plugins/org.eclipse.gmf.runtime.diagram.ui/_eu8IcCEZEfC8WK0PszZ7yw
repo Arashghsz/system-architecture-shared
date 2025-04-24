@@ -15,5 +15,6 @@ rulergrid.gridspacing=20.0
 rulergrid.rulerunit=2
 rulergrid.snaptogrid=true
 rulergrid.viewgrid=true
-viewport.y=71
+viewport.x=243
+viewport.y=234
 zoom=1.0

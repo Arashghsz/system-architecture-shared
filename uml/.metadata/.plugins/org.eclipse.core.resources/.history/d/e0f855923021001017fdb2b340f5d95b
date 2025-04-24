@@ -455,7 +455,7 @@
       <message xmi:type="uml:Message" xmi:id="_8u8y4CEuEfChK5G4Gh8VBA" name="Restaurant Acknowledged Order" messageSort="asynchCall" receiveEvent="_8u-BACEuEfChK5G4Gh8VBA" sendEvent="_8u9Z8CEuEfChK5G4Gh8VBA"/>
       <message xmi:type="uml:Message" xmi:id="_Ts7KgCEvEfChK5G4Gh8VBA" name="Restaurant Unavailable" messageSort="reply" receiveEvent="_Ts8YoCEvEfChK5G4Gh8VBA" sendEvent="_Ts7xkCEvEfChK5G4Gh8VBA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_h4aY0CEvEfChK5G4Gh8VBA" name="UC-3">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_h4aY0CEvEfChK5G4Gh8VBA" name="Interaction3">
       <lifeline xmi:type="uml:Lifeline" xmi:id="_rNAwsCEvEfChK5G4Gh8VBA" name="Restaurant" coveredBy="_1hEacCEvEfChK5G4Gh8VBA"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_tLkvICEvEfChK5G4Gh8VBA" name="Restaurant View" coveredBy="_1hEacSEvEfChK5G4Gh8VBA _6OP7QCEvEfChK5G4Gh8VBA"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_t-ahUCEvEfChK5G4Gh8VBA" name="Restaurant Controller" coveredBy="_6OP7QSEvEfChK5G4Gh8VBA _FO8okCEwEfChK5G4Gh8VBA _TWr_UCEwEfChK5G4Gh8VBA"/>
