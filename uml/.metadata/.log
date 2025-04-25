@@ -4856,3 +4856,552 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.papyrus.infra.core.services.ServicesRegistry.disposeServices(ServicesRegistry.java:1046)
 	at org.eclipse.papyrus.infra.core.services.ServicesRegistry.disposeRegistry(ServicesRegistry.java:907)
 	... 113 more
+!SESSION 2025-04-25 17:48:08.315 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2025-04-25 17:52:24.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [418]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [451]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [423]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.feed 4 0 2025-04-25 17:52:24.427
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.feed [423]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.context.tasks.ui 4 0 2025-04-25 17:52:24.428
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.tasks.ui [432]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [451]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [423]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.java.tasks 4 0 2025-04-25 17:52:24.428
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.tasks [440]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [451]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [423]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.tasks.bugs 4 0 2025-04-25 17:52:24.429
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.bugs [446]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [451]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [423]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2025-04-25 17:52:24.430
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [451]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+       org.eclipse.mylyn.commons.notifications.feed [423]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.team.ui 4 0 2025-04-25 17:52:24.430
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.team.ui [452]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [451]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [423]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.papyrus.infra.tools 2 0 2025-04-25 17:57:08.192
+!MESSAGE Using ClassLoaderHelper#loadClass without an appropriate context. This may degrade performances (Class: org.eclipse.papyrus.infra.gmfdiag.common.decoration.OpenArrowConnectionDecoration)
+
+!ENTRY org.eclipse.papyrus.infra.tools 2 0 2025-04-25 17:57:08.194
+!MESSAGE Using ClassLoaderHelper#loadClass without an appropriate context. This may degrade performances (Class: org.eclipse.papyrus.infra.gmfdiag.common.decoration.SolidDiamondFilledConnectionDecoration)
+
+!ENTRY org.eclipse.papyrus.infra.tools 2 0 2025-04-25 17:57:08.195
+!MESSAGE Using ClassLoaderHelper#loadClass without an appropriate context. This may degrade performances (Class: org.eclipse.papyrus.infra.gmfdiag.common.decoration.SolidDiamondEmptyConnectionDecoration)
+
+!ENTRY org.eclipse.papyrus.infra.tools 2 0 2025-04-25 17:57:08.196
+!MESSAGE Using ClassLoaderHelper#loadClass without an appropriate context. This may degrade performances (Class: org.eclipse.papyrus.infra.gmfdiag.common.decoration.SolidArrowFilledConnectionDecoration)
+
+!ENTRY org.eclipse.papyrus.infra.tools 2 0 2025-04-25 17:57:08.197
+!MESSAGE Using ClassLoaderHelper#loadClass without an appropriate context. This may degrade performances (Class: org.eclipse.papyrus.infra.gmfdiag.common.decoration.SolidArrowEmptyConnectionDecoration)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-25 18:40:24.939
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.refresh()" because "part" is null
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbsoluteBounds(Utils.java:103)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbslotueRequestBounds(Utils.java:90)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleChangeParentNotificationCommand(GroupRequestAdvisor.java:484)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleSemanticChildren(GroupRequestAdvisor.java:428)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleMove(GroupRequestAdvisor.java:337)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.notifyGroupFramework(GroupRequestAdvisor.java:306)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.GroupNotifyingOnMoveEditPolicy.getCommand(GroupNotifyingOnMoveEditPolicy.java:60)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.ActivityGroupEditPolicy.getCommand(ActivityGroupEditPolicy.java:71)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:482)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$1(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$1.run(GraphicalEditPart.java:483)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:273)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.getCommand(GraphicalEditPart.java:478)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getDropCommand(DragDropEditPolicy.java:112)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DiagramDragDropEditPolicy.getDropCommand(DiagramDragDropEditPolicy.java:151)
+	at org.eclipse.papyrus.uml.diagram.activity.edit.policies.CustomDiagramDragDropEditPolicy.getDropCommand(CustomDiagramDragDropEditPolicy.java:722)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getCommand(DragDropEditPolicy.java:75)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.strategy.DefaultDropStrategy.getCommand(DefaultDropStrategy.java:76)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.findExtendedStrategies(CustomizableDropEditPolicy.java:490)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.showTargetFeedback(CustomizableDropEditPolicy.java:507)
+	at org.eclipse.gef.editparts.AbstractEditPart.lambda$16(AbstractEditPart.java:1124)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.eclipse.gef.editparts.AbstractEditPart.showTargetFeedback(AbstractEditPart.java:1124)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showTargetFeedback(GraphicalEditPart.java:1390)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.showTargetFeedback(TargetingTool.java:391)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.handleEnteredEditPart(TargetingTool.java:204)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.setTargetEditPart(TargetingTool.java:370)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.CustomDragEditPartsTracker.setTargetEditPart(CustomDragEditPartsTracker.java:585)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.updateTargetUnderMouse(TargetingTool.java:443)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.CustomDragEditPartsTracker.handleAutoexpose(CustomDragEditPartsTracker.java:348)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.doAutoexpose(TargetingTool.java:96)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool$QueuedAutoexpose.run(TargetingTool.java:332)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-25 18:40:25.033
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.refresh()" because "part" is null
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbsoluteBounds(Utils.java:103)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbslotueRequestBounds(Utils.java:90)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleChangeParentNotificationCommand(GroupRequestAdvisor.java:484)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleSemanticChildren(GroupRequestAdvisor.java:428)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleMove(GroupRequestAdvisor.java:337)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.notifyGroupFramework(GroupRequestAdvisor.java:306)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.GroupNotifyingOnMoveEditPolicy.getCommand(GroupNotifyingOnMoveEditPolicy.java:60)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.ActivityGroupEditPolicy.getCommand(ActivityGroupEditPolicy.java:71)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:482)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$1(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$1.run(GraphicalEditPart.java:483)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:273)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.getCommand(GraphicalEditPart.java:478)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getDropCommand(DragDropEditPolicy.java:112)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DiagramDragDropEditPolicy.getDropCommand(DiagramDragDropEditPolicy.java:151)
+	at org.eclipse.papyrus.uml.diagram.activity.edit.policies.CustomDiagramDragDropEditPolicy.getDropCommand(CustomDiagramDragDropEditPolicy.java:722)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getCommand(DragDropEditPolicy.java:75)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.strategy.DefaultDropStrategy.getCommand(DefaultDropStrategy.java:76)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.findExtendedStrategies(CustomizableDropEditPolicy.java:490)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.showTargetFeedback(CustomizableDropEditPolicy.java:507)
+	at org.eclipse.gef.editparts.AbstractEditPart.lambda$16(AbstractEditPart.java:1124)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.eclipse.gef.editparts.AbstractEditPart.showTargetFeedback(AbstractEditPart.java:1124)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showTargetFeedback(GraphicalEditPart.java:1390)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.showTargetFeedback(TargetingTool.java:391)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.CustomDragEditPartsTracker.handleDragInProgress(CustomDragEditPartsTracker.java:383)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDragInProgress(DragEditPartsTrackerEx.java:191)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDrag(AbstractTool.java:1116)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:249)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:413)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:592)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-25 18:40:25.043
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.refresh()" because "part" is null
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbsoluteBounds(Utils.java:103)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbslotueRequestBounds(Utils.java:90)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleChangeParentNotificationCommand(GroupRequestAdvisor.java:484)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleSemanticChildren(GroupRequestAdvisor.java:428)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleMove(GroupRequestAdvisor.java:337)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.notifyGroupFramework(GroupRequestAdvisor.java:306)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.GroupNotifyingOnMoveEditPolicy.getCommand(GroupNotifyingOnMoveEditPolicy.java:60)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.ActivityGroupEditPolicy.getCommand(ActivityGroupEditPolicy.java:71)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:482)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$1(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$1.run(GraphicalEditPart.java:483)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:273)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.getCommand(GraphicalEditPart.java:478)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getDropCommand(DragDropEditPolicy.java:112)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DiagramDragDropEditPolicy.getDropCommand(DiagramDragDropEditPolicy.java:151)
+	at org.eclipse.papyrus.uml.diagram.activity.edit.policies.CustomDiagramDragDropEditPolicy.getDropCommand(CustomDiagramDragDropEditPolicy.java:722)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getCommand(DragDropEditPolicy.java:75)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.strategy.DefaultDropStrategy.getCommand(DefaultDropStrategy.java:76)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.findExtendedStrategies(CustomizableDropEditPolicy.java:490)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.showTargetFeedback(CustomizableDropEditPolicy.java:507)
+	at org.eclipse.gef.editparts.AbstractEditPart.lambda$16(AbstractEditPart.java:1124)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.eclipse.gef.editparts.AbstractEditPart.showTargetFeedback(AbstractEditPart.java:1124)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showTargetFeedback(GraphicalEditPart.java:1390)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.showTargetFeedback(TargetingTool.java:391)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.CustomDragEditPartsTracker.handleDragInProgress(CustomDragEditPartsTracker.java:383)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDragInProgress(DragEditPartsTrackerEx.java:191)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDrag(AbstractTool.java:1116)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:249)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:413)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:592)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.ui 4 0 2025-04-25 18:40:25.067
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.refresh()" because "part" is null
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbsoluteBounds(Utils.java:103)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.utils.Utils.getAbslotueRequestBounds(Utils.java:90)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleChangeParentNotificationCommand(GroupRequestAdvisor.java:484)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleSemanticChildren(GroupRequestAdvisor.java:428)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.handleMove(GroupRequestAdvisor.java:337)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.GroupRequestAdvisor.notifyGroupFramework(GroupRequestAdvisor.java:306)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.GroupNotifyingOnMoveEditPolicy.getCommand(GroupNotifyingOnMoveEditPolicy.java:60)
+	at org.eclipse.papyrus.uml.diagram.activity.activitygroup.editpolicy.notifiers.ActivityGroupEditPolicy.getCommand(ActivityGroupEditPolicy.java:71)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:482)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$1(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$1.run(GraphicalEditPart.java:483)
+	at org.eclipse.papyrus.infra.emf.readonly.PapyrusROTransactionalEditingDomain.runExclusive(PapyrusROTransactionalEditingDomain.java:273)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.getCommand(GraphicalEditPart.java:478)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getDropCommand(DragDropEditPolicy.java:112)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DiagramDragDropEditPolicy.getDropCommand(DiagramDragDropEditPolicy.java:151)
+	at org.eclipse.papyrus.uml.diagram.activity.edit.policies.CustomDiagramDragDropEditPolicy.getDropCommand(CustomDiagramDragDropEditPolicy.java:722)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy.getCommand(DragDropEditPolicy.java:75)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.strategy.DefaultDropStrategy.getCommand(DefaultDropStrategy.java:76)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.findExtendedStrategies(CustomizableDropEditPolicy.java:490)
+	at org.eclipse.papyrus.infra.gmfdiag.dnd.policy.CustomizableDropEditPolicy.showTargetFeedback(CustomizableDropEditPolicy.java:507)
+	at org.eclipse.gef.editparts.AbstractEditPart.lambda$16(AbstractEditPart.java:1124)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.eclipse.gef.editparts.AbstractEditPart.showTargetFeedback(AbstractEditPart.java:1124)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showTargetFeedback(GraphicalEditPart.java:1390)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.TargetingTool.showTargetFeedback(TargetingTool.java:391)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.CustomDragEditPartsTracker.handleDragInProgress(CustomDragEditPartsTracker.java:383)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDragInProgress(DragEditPartsTrackerEx.java:191)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDrag(AbstractTool.java:1116)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:555)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:249)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:413)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:592)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)

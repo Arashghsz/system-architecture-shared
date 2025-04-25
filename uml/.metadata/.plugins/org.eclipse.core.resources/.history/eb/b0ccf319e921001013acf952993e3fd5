@@ -307,37 +307,6 @@
       <node xmi:type="uml:JoinNode" xmi:id="_3CKwwCAyEfC2uOix2kZrmw" incoming="_6v_tYCAyEfC2uOix2kZrmw _7m0nsCAyEfC2uOix2kZrmw _8zLtICAyEfC2uOix2kZrmw" outgoing="_EvljACAzEfC2uOix2kZrmw" inPartition="_6r330CAxEfC2uOix2kZrmw"/>
       <node xmi:type="uml:ForkNode" xmi:id="_GFkegCAzEfC2uOix2kZrmw" incoming="_Lw5poCAzEfC2uOix2kZrmw" outgoing="_I2-PICAzEfC2uOix2kZrmw _KeSyQCAzEfC2uOix2kZrmw _OrWBgCAzEfC2uOix2kZrmw" inPartition="_6r330CAxEfC2uOix2kZrmw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_sJ90ACHmEfC9_utWGosjuw" name="UC-10" node="_ISbTgCHnEfC9_utWGosjuw _LK58gCHnEfC9_utWGosjuw __FLEUCHnEfC9_utWGosjuw _DokXACHoEfC9_utWGosjuw _QIQK0CHoEfC9_utWGosjuw _fvLcYCHoEfC9_utWGosjuw _qDm5kCHoEfC9_utWGosjuw" group="__bM0ICHmEfC9_utWGosjuw _AOzbUCHnEfC9_utWGosjuw">
-      <edge xmi:type="uml:ControlFlow" xmi:id="_Zl2jICHnEfC9_utWGosjuw" inPartition="__bM0ICHmEfC9_utWGosjuw" target="_LK58gCHnEfC9_utWGosjuw" source="_ISbTgCHnEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_CHbUYCHoEfC9_utWGosjuw" inPartition="__bM0ICHmEfC9_utWGosjuw" target="__FLEUCHnEfC9_utWGosjuw" source="_LK58gCHnEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_ZPLTECHoEfC9_utWGosjuw" target="_QIQK0CHoEfC9_utWGosjuw" source="__FLEUCHnEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_kH_PsCHoEfC9_utWGosjuw" inPartition="_AOzbUCHnEfC9_utWGosjuw" target="_fvLcYCHoEfC9_utWGosjuw" source="_QIQK0CHoEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_wesGoCHoEfC9_utWGosjuw" inPartition="_AOzbUCHnEfC9_utWGosjuw" target="_qDm5kCHoEfC9_utWGosjuw" source="_fvLcYCHoEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="__bM0ICHmEfC9_utWGosjuw" name="Customer" node="_ISbTgCHnEfC9_utWGosjuw _LK58gCHnEfC9_utWGosjuw __FLEUCHnEfC9_utWGosjuw" edge="_Zl2jICHnEfC9_utWGosjuw _CHbUYCHoEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_AOzbUCHnEfC9_utWGosjuw" name="Payment" node="_QIQK0CHoEfC9_utWGosjuw _fvLcYCHoEfC9_utWGosjuw _qDm5kCHoEfC9_utWGosjuw" edge="_kH_PsCHoEfC9_utWGosjuw _wesGoCHoEfC9_utWGosjuw"/>
-      <node xmi:type="uml:InitialNode" xmi:id="_ISbTgCHnEfC9_utWGosjuw" name="" outgoing="_Zl2jICHnEfC9_utWGosjuw" inPartition="__bM0ICHmEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_LK58gCHnEfC9_utWGosjuw" name="Select Food Items" incoming="_Zl2jICHnEfC9_utWGosjuw" outgoing="_CHbUYCHoEfC9_utWGosjuw" inPartition="__bM0ICHmEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="__FLEUCHnEfC9_utWGosjuw" name="Place New Order" incoming="_CHbUYCHoEfC9_utWGosjuw" outgoing="_ZPLTECHoEfC9_utWGosjuw" inPartition="__bM0ICHmEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_DokXACHoEfC9_utWGosjuw" name="Pay For Ordered Items"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_QIQK0CHoEfC9_utWGosjuw" name="Select Payment Method" incoming="_ZPLTECHoEfC9_utWGosjuw" outgoing="_kH_PsCHoEfC9_utWGosjuw" inPartition="_AOzbUCHnEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_fvLcYCHoEfC9_utWGosjuw" name="Process Payment Externally" incoming="_kH_PsCHoEfC9_utWGosjuw" outgoing="_wesGoCHoEfC9_utWGosjuw" inPartition="_AOzbUCHnEfC9_utWGosjuw"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_qDm5kCHoEfC9_utWGosjuw" name="Order Payed Successfully" incoming="_wesGoCHoEfC9_utWGosjuw" inPartition="_AOzbUCHnEfC9_utWGosjuw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_Kqly0CHpEfC9_utWGosjuw" name="UC-11" node="_rdgPQCHpEfC9_utWGosjuw _xcbr0CHpEfC9_utWGosjuw _33Cs4CHrEfC9_utWGosjuw _QqxsQCHsEfC9_utWGosjuw _ujqnkCHsEfC9_utWGosjuw" group="_M-aPkCHpEfC9_utWGosjuw _cRFvcCHpEfC9_utWGosjuw _eTuVkCHpEfC9_utWGosjuw _gHhOcCHpEfC9_utWGosjuw">
-      <edge xmi:type="uml:ControlFlow" xmi:id="_hice4CHqEfC9_utWGosjuw" inPartition="_M-aPkCHpEfC9_utWGosjuw" target="_xcbr0CHpEfC9_utWGosjuw" source="_rdgPQCHpEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_BQjZ8CHsEfC9_utWGosjuw" target="_33Cs4CHrEfC9_utWGosjuw" source="_xcbr0CHpEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_tECn4CHsEfC9_utWGosjuw" target="_QqxsQCHsEfC9_utWGosjuw" source="_33Cs4CHrEfC9_utWGosjuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_2q8QsCHsEfC9_utWGosjuw" target="_ujqnkCHsEfC9_utWGosjuw" source="_QqxsQCHsEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_M-aPkCHpEfC9_utWGosjuw" name="Courier" node="_rdgPQCHpEfC9_utWGosjuw _xcbr0CHpEfC9_utWGosjuw" edge="_hice4CHqEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_cRFvcCHpEfC9_utWGosjuw" name="Delivery" node="_33Cs4CHrEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_eTuVkCHpEfC9_utWGosjuw" name="Customer" node="_ujqnkCHsEfC9_utWGosjuw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_gHhOcCHpEfC9_utWGosjuw" name="Notification" node="_QqxsQCHsEfC9_utWGosjuw"/>
-      <node xmi:type="uml:InitialNode" xmi:id="_rdgPQCHpEfC9_utWGosjuw" name="" outgoing="_hice4CHqEfC9_utWGosjuw" inPartition="_M-aPkCHpEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_xcbr0CHpEfC9_utWGosjuw" name="Access Delivery Info Menu" incoming="_hice4CHqEfC9_utWGosjuw" outgoing="_BQjZ8CHsEfC9_utWGosjuw" inPartition="_M-aPkCHpEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_33Cs4CHrEfC9_utWGosjuw" name="Set New Delivery Time" incoming="_BQjZ8CHsEfC9_utWGosjuw" outgoing="_tECn4CHsEfC9_utWGosjuw" inPartition="_cRFvcCHpEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_QqxsQCHsEfC9_utWGosjuw" name="Notify Customer New Delivery Time" incoming="_tECn4CHsEfC9_utWGosjuw" outgoing="_2q8QsCHsEfC9_utWGosjuw" inPartition="_gHhOcCHpEfC9_utWGosjuw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_ujqnkCHsEfC9_utWGosjuw" name="Show New Delivery Time" incoming="_2q8QsCHsEfC9_utWGosjuw" inPartition="_eTuVkCHpEfC9_utWGosjuw"/>
-    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_bsDmQCEZEfC8WK0PszZ7yw" name="Sequence Diagrams">
     <packagedElement xmi:type="uml:Interaction" xmi:id="_d900kCEZEfC8WK0PszZ7yw" name="UC-1">
