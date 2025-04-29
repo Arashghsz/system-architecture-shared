@@ -3,30 +3,12 @@
   <di:SashWindowsMngr>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
       <windows>
-        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.7">
-          <children>
-            <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_rQWaAA-TEfCA3McyNxfsCw"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_eu8IcCEZEfC8WK0PszZ7yw"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_WB9o4CEnEfC8WK0PszZ7yw"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_imNS8CEvEfChK5G4Gh8VBA"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_wP6vQBnvEfCAZ5eS3OrC7Q"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_yoNCwCHmEfC9_utWGosjuw"/>
-          </children>
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.1">
           <children>
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_LUedUCHpEfC9_utWGosjuw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_OTtloCUKEfCUleKnL5Av2w"/>
           </children>
         </children>
       </windows>
