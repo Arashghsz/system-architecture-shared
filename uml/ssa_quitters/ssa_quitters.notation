@@ -7429,7 +7429,7 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OksrEChDEfCks9nsEXCyVA" id="(0.5,0.09142857142857143)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OksrEShDEfCks9nsEXCyVA" id="(0.5,0.09142857142857143)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_OkyKoChDEfCks9nsEXCyVA" type="Message_ReplyEdge" source="_N3p-4ChDEfCks9nsEXCyVA" target="_7Vj8sChCEfCks9nsEXCyVA">
+    <edges xmi:type="notation:Connector" xmi:id="_OkyKoChDEfCks9nsEXCyVA" type="Message_ReplyEdge" source="_N3p-4ChDEfCks9nsEXCyVA" target="_7Vj8sChCEfCks9nsEXCyVA" lineColor="16777215" lineWidth="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_OkyKoyhDEfCks9nsEXCyVA" type="Message_ReplyNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_OkyKpChDEfCks9nsEXCyVA" x="1" y="-13"/>
       </children>
@@ -7455,7 +7455,7 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VeKdQChDEfCks9nsEXCyVA" id="(0.5,0.12)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VeKdQShDEfCks9nsEXCyVA" id="(0.5,0.12)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_VePVwChDEfCks9nsEXCyVA" type="Message_ReplyEdge" source="_T8eBAChDEfCks9nsEXCyVA" target="_N3p-4ChDEfCks9nsEXCyVA">
+    <edges xmi:type="notation:Connector" xmi:id="_VePVwChDEfCks9nsEXCyVA" type="Message_ReplyEdge" source="_T8eBAChDEfCks9nsEXCyVA" target="_N3p-4ChDEfCks9nsEXCyVA" lineColor="16777215" lineWidth="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_VePVwyhDEfCks9nsEXCyVA" type="Message_ReplyNameLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_VePVxChDEfCks9nsEXCyVA" x="1" y="-13"/>
       </children>

@@ -1127,9 +1127,9 @@
       <message xmi:type="uml:Message" xmi:id="_JY4GcChDEfCks9nsEXCyVA" name="deliver()" receiveEvent="_JY57oChDEfCks9nsEXCyVA" sendEvent="_JY5UkChDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_JZM2kChDEfCks9nsEXCyVA" name="delivering" messageSort="reply" receiveEvent="_JZNdoChDEfCks9nsEXCyVA" sendEvent="_JZM2kShDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_Okhr8ChDEfCks9nsEXCyVA" name="changeStatus(&quot;delivered&quot;)" receiveEvent="_Oki6EChDEfCks9nsEXCyVA" sendEvent="_OkiTAChDEfCks9nsEXCyVA"/>
-      <message xmi:type="uml:Message" xmi:id="_OkxjkChDEfCks9nsEXCyVA" name="Message16" messageSort="reply" receiveEvent="_OkxjkihDEfCks9nsEXCyVA" sendEvent="_OkxjkShDEfCks9nsEXCyVA"/>
+      <message xmi:type="uml:Message" xmi:id="_OkxjkChDEfCks9nsEXCyVA" messageSort="reply" receiveEvent="_OkxjkihDEfCks9nsEXCyVA" sendEvent="_OkxjkShDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_Vd-3EChDEfCks9nsEXCyVA" name="changeStatus(&quot;deliver&quot;)" receiveEvent="_Vd_eIShDEfCks9nsEXCyVA" sendEvent="_Vd_eIChDEfCks9nsEXCyVA"/>
-      <message xmi:type="uml:Message" xmi:id="_VeOusChDEfCks9nsEXCyVA" name="Message24" messageSort="reply" receiveEvent="_VeOusihDEfCks9nsEXCyVA" sendEvent="_VeOusShDEfCks9nsEXCyVA"/>
+      <message xmi:type="uml:Message" xmi:id="_VeOusChDEfCks9nsEXCyVA" messageSort="reply" receiveEvent="_VeOusihDEfCks9nsEXCyVA" sendEvent="_VeOusShDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_cyIaIChDEfCks9nsEXCyVA" name="notifyObservers()" messageSort="asynchCall" receiveEvent="_cyJoQShDEfCks9nsEXCyVA" sendEvent="_cyJoQChDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_fdt2oChDEfCks9nsEXCyVA" name="uodate()" receiveEvent="_fdvEwChDEfCks9nsEXCyVA" sendEvent="_fdudsChDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_feB_sChDEfCks9nsEXCyVA" messageSort="reply" receiveEvent="_feB_sihDEfCks9nsEXCyVA" sendEvent="_feB_sShDEfCks9nsEXCyVA"/>
