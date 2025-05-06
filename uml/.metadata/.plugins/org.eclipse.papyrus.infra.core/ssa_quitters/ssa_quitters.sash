@@ -3,12 +3,45 @@
   <di:SashWindowsMngr>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
       <windows>
-        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.1">
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.0">
           <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_LUedUCHpEfC9_utWGosjuw"/>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_0vt94CmyEfCqcvRNBFLqUA"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_eu8IcCEZEfC8WK0PszZ7yw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_WB9o4CEnEfC8WK0PszZ7yw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_imNS8CEvEfChK5G4Gh8VBA"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_hqvjICW3EfCa8qcEALBj8g"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_dFp8cCW5EfCa8qcEALBj8g"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_cxQIYCO5EfCPtLgUPtXUrg"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_fdNYUCO5EfCPtLgUPtXUrg"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_aVZaYCUAEfCUleKnL5Av2w"/>
           </children>
           <children>
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_OTtloCUKEfCUleKnL5Av2w"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_2lgeICguEfCVx46a-5zHXQ"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_0QEhsCg3EfCVx46a-5zHXQ"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_1ypGsChCEfCks9nsEXCyVA"/>
           </children>
         </children>
       </windows>

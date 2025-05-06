@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/ssa_quitters/ssa_quitters.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+				<item value="platform:/resource/ssa_quitters/ssa_quitters.uml#_HSuesCm2EfCqcvRNBFLqUA"/>
+				<item value="platform:/resource/ssa_quitters/ssa_quitters.uml#_UvqP0Cm0EfCqcvRNBFLqUA"/>
+				<item value="platform:/resource/ssa_quitters/ssa_quitters.uml#_K_tGwCm2EfCqcvRNBFLqUA"/>
+				<item value="platform:/resource/ssa_quitters/ssa_quitters.uml#_ouYWICm2EfCqcvRNBFLqUA"/>
+				<item value="platform:/resource/ssa_quitters/ssa_quitters.uml#_TWZW0Cm0EfCqcvRNBFLqUA"/>
+			</list>
+		</section>
+	</section>
 </section>
