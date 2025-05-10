@@ -1163,6 +1163,55 @@
       <message xmi:type="uml:Message" xmi:id="_xmD8EChDEfCks9nsEXCyVA" name="status" receiveEvent="_xmFKMChDEfCks9nsEXCyVA" sendEvent="_xmEjIChDEfCks9nsEXCyVA"/>
       <message xmi:type="uml:Message" xmi:id="_xmYFIChDEfCks9nsEXCyVA" messageSort="reply" receiveEvent="_xmYFIihDEfCks9nsEXCyVA" sendEvent="_xmYFIShDEfCks9nsEXCyVA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Device" xmi:id="_vdjdYC2nEfCCyOmHidDd9w" name="Customer">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_PZaWAC2oEfCCyOmHidDd9w" name="Frontend Web App"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_yol2AC2nEfCCyOmHidDd9w" name="Web Server"/>
+    <packagedElement xmi:type="uml:Node" xmi:id="_6J7ggC2nEfCCyOmHidDd9w" name="Application server">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_SAxZ0C2oEfCCyOmHidDd9w" name="Backend Service"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_DdXawC2oEfCCyOmHidDd9w" name="Database Server">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_TmzjgC2oEfCCyOmHidDd9w" name="MySQL Database"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_FJe-UC2oEfCCyOmHidDd9w" name="Restaurant Terminal"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_IjyiAC2oEfCCyOmHidDd9w" name="Courier App Device">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_WGIFoC2oEfCCyOmHidDd9w" name="Notification Service"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_5t-u4C2oEfCCyOmHidDd9w" name="FrontendWeb App" memberEnd="_5t_9Ai2oEfCCyOmHidDd9w _5uAkEC2oEfCCyOmHidDd9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5t_9AC2oEfCCyOmHidDd9w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5t_9AS2oEfCCyOmHidDd9w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5t_9Ai2oEfCCyOmHidDd9w" name="web server" type="_yol2AC2nEfCCyOmHidDd9w" association="_5t-u4C2oEfCCyOmHidDd9w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5uAkEC2oEfCCyOmHidDd9w" name="customer" type="_vdjdYC2nEfCCyOmHidDd9w" association="_5t-u4C2oEfCCyOmHidDd9w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_8rIcgC2oEfCCyOmHidDd9w" memberEnd="_8rKRsC2oEfCCyOmHidDd9w _8rMG4C2oEfCCyOmHidDd9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8rJqoC2oEfCCyOmHidDd9w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8rJqoS2oEfCCyOmHidDd9w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8rKRsC2oEfCCyOmHidDd9w" name="database server" type="_DdXawC2oEfCCyOmHidDd9w" association="_8rIcgC2oEfCCyOmHidDd9w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8rMG4C2oEfCCyOmHidDd9w" name="web server" type="_yol2AC2nEfCCyOmHidDd9w" association="_8rIcgC2oEfCCyOmHidDd9w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_BYgxoC2pEfCCyOmHidDd9w" memberEnd="_BYhYsi2pEfCCyOmHidDd9w _BYh_wC2pEfCCyOmHidDd9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BYhYsC2pEfCCyOmHidDd9w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BYhYsS2pEfCCyOmHidDd9w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BYhYsi2pEfCCyOmHidDd9w" name="restaurant terminal" type="_FJe-UC2oEfCCyOmHidDd9w" association="_BYgxoC2pEfCCyOmHidDd9w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_BYh_wC2pEfCCyOmHidDd9w" name="database server" type="_DdXawC2oEfCCyOmHidDd9w" association="_BYgxoC2pEfCCyOmHidDd9w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_D6p-QC2pEfCCyOmHidDd9w" memberEnd="_D6rMYi2pEfCCyOmHidDd9w _D6sagC2pEfCCyOmHidDd9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D6rMYC2pEfCCyOmHidDd9w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D6rMYS2pEfCCyOmHidDd9w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D6rMYi2pEfCCyOmHidDd9w" name="restaurant terminal" type="_FJe-UC2oEfCCyOmHidDd9w" association="_D6p-QC2pEfCCyOmHidDd9w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D6sagC2pEfCCyOmHidDd9w" name="application server" type="_6J7ggC2nEfCCyOmHidDd9w" association="_D6p-QC2pEfCCyOmHidDd9w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_GcIcgC2pEfCCyOmHidDd9w" memberEnd="_GcJDkS2pEfCCyOmHidDd9w _GcJDki2pEfCCyOmHidDd9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GcIcgS2pEfCCyOmHidDd9w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GcJDkC2pEfCCyOmHidDd9w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GcJDkS2pEfCCyOmHidDd9w" name="courier app device" type="_IjyiAC2oEfCCyOmHidDd9w" association="_GcIcgC2pEfCCyOmHidDd9w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GcJDki2pEfCCyOmHidDd9w" name="restaurant terminal" type="_FJe-UC2oEfCCyOmHidDd9w" association="_GcIcgC2pEfCCyOmHidDd9w"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_woRnYCmyEfCqcvRNBFLqUA" name="ClassDiagram">
     <packagedElement xmi:type="uml:Class" xmi:id="_aasVcCmzEfCqcvRNBFLqUA" name="Restaurant">
