@@ -3,7 +3,7 @@
   <di:SashWindowsMngr>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
       <windows>
-        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.0">
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.1">
           <children>
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_0vt94CmyEfCqcvRNBFLqUA"/>
           </children>
@@ -15,9 +15,6 @@
           </children>
           <children>
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_imNS8CEvEfChK5G4Gh8VBA"/>
-          </children>
-          <children>
-            <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_hqvjICW3EfCa8qcEALBj8g"/>
           </children>
           <children>
             <emfPageIdentifier href="platform:/resource/ssa_quitters/ssa_quitters.notation#_dFp8cCW5EfCa8qcEALBj8g"/>
