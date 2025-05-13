@@ -1,4 +1,4 @@
-#Thu Apr 24 19:15:40 EEST 2025
+#Tue May 13 16:37:11 EEST 2025
 print.margin.bottom=0.5
 print.margin.left=0.5
 print.margin.right=0.5
@@ -16,5 +16,5 @@ rulergrid.rulerunit=2
 rulergrid.snaptogrid=true
 rulergrid.viewgrid=true
 viewport.x=0
-viewport.y=357
+viewport.y=112
 zoom=0.75
